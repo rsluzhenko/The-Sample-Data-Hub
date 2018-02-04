@@ -1,0 +1,45 @@
+/*
+	loadingScreenStyle
+*/
+
+#loading-screen {
+	position: fixed;
+	top: 0;
+	left: -10px;
+	z-index: 1024;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, .6);
+	padding: 0 10px;
+}
+
+#loading-screen .loading-bar {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+#loading-screen .loading-bar .loading-cell {
+	position: absolute;
+	top: -3em;
+	left: -3em;
+	width: 6em;
+	height: 6em;
+	background: url('loading_icon.svg') center/100% no-repeat;
+	animation: rotate_in_fog 2s infinite linear;
+}
+
+@keyframes rotate_in_fog {
+	0% { 
+		transform: rotate(0deg);
+		opacity: 1;
+	}	
+	50% { 
+		transform: rotate(180deg);
+		opacity: .6;
+	}
+	100% { 
+		transform: rotate(360deg);
+		opacity: 1;
+	}
+}

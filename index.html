@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Github Hub</title>
+		<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="css/site.css" />
+		<link rel="stylesheet" href="css/loadingScreenStyle.css" />
+		<link rel="stylesheet" href="css/dataTableStyle.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<!--nav>
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="contact.html">Contact</a>
+						</li>
+						<li>
+							<a href="about.html">About</a>
+						</li>
+					</ul>
+				</nav-->
+				<div id="title-div">
+					<h1>The Sample Data Hub</h1>
+				</div>
+				<div id="subtitle-div">This is a site to search sample user data or GitHub for interesting projects.</div>
+			</header>
+			<section id="main">
+				<div id="search-paragraph-div">
+					<p>In this sample site, you can browse sample data retrieved from 
+						<a href="https://jsonplaceholder.typicode.com/">jsonplaceholder</a> and 
+						<a href="http://github.com">GitHub</a> projects and see some information about them.
+					</p>
+				</div>
+
+				<fieldset id="form-fieldset">
+					<legend>Search</legend>
+
+					<form action="https://wilder.azurewebsites.net/echo" method="POST" 
+					class="simple-form" id="searchForm">
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<label for="category">Category</label>
+									</td>
+									<td>
+										<select name="category" id="category">
+											<option value="posts">Posts</option>
+											<option value="comments">Comments</option>
+											<option value="albums">Albums</option>
+											<option value="photos">Photos</option>
+											<option value="todos">Todos</option>
+											<option value="users" selected>Users</option>
+											<option value="repositories">GitHub repositories</option>
+										</select>
+									</td>
+								</tr>
+								<tr class="normalFilter usersFilter">
+									<td>
+										<label for="searchBy">Search by</label>
+									</td>
+									<td>
+										<select name="searchBy" id="searchBy">
+											<option value="id">ID</option>
+											<option value="name" selected>Name</option>
+											<option value="username">Username</option>
+											<option value="email">Email</option>
+											<option value="address">Address</option>
+											<option value="phone">Phone</option>
+											<option value="website">Website</option>
+											<option value="company">Company</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="searchPhrase">Search Phrase</label>
+									</td>
+									<td>
+										<input type="text" name="searchPhrase" id="searchPhrase" />
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td class="errorMsg" style="display: none;" id="fieldSetMsg">
+										Enter a search phrase.
+									</td>
+								</tr>
+								<tr class="repoFilter hidden">
+									<td>
+										<label for="useStars">Use Stars</label>
+									</td>
+									<td>
+										<input type="checkbox" name="useStars" id="useStars" checked="true" />
+									</td>
+								</tr>
+								<tr class="repoFilter hidden">
+									<td>
+										<label for="langChoice">Language</label>
+									</td>
+									<td>
+										<select name="langChoice" id="langChoice">
+											<option>All</option>
+											<option>JavaScript</option>
+											<option selected>C#</option>
+											<option>Java</option>
+											<option>Ruby</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" id="submit-cell">
+										<input type="submit" value="search" class="btnStyle"/>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</form>
+				</fieldset>
+
+				<div id="results">
+					<button id="toggleButton" class="btnStyle">hide</button>
+					<div id="resultList">Search results will be displayed here.</div>
+				</div>
+			</section>
+			<footer>
+			&copy; 2017 Rafael Toro Sluzhenko
+			</footer>
+		</div>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/loadingScreen.js"></script>
+	</body>
+</html>

@@ -1,0 +1,55 @@
+/*
+	dataTableStyle.css
+*/
+
+#dataTable {
+	width: 100%;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+#dataTable th {
+	height: 20px;
+    background-color: green;
+    color: white;
+    padding: 6px 8px;
+    white-space: pre-wrap;
+    text-align: center;
+    vertical-align: baseline;
+    font-family: Lato, sans-serif;
+}
+
+#dataTable tr.even {
+	background-color: #F0EAE2;
+}
+
+#dataTable tr.dataRow td{
+	padding:4px 2px;
+    text-align:center;
+    border:none;
+	color: #3e464c;
+}
+
+#dataTable tr.dataRow:hover {
+	outline:1px solid green;
+	cursor: pointer;
+	/*-webkit-animation: pulse 1s infinite alternate;*/
+}
+
+#dataTable tr.dataRow td a {
+	text-decoration: none;
+	color: #3e464c;
+}
+
+@-webkit-keyframes pulse {
+	from { background-color: #F0EAE2; }
+	to { background-color: #fceeb8; }
+}
+
+
+
+
+
+
+
+

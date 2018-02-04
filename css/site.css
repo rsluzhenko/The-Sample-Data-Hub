@@ -1,0 +1,194 @@
+/* 
+site.css 
+*/
+
+header, footer {
+	border: solid 1px #2c87ce;
+	font-weight: bold;
+	background-color: #2c87ce;
+    color: white;
+	border-radius: 3px;
+}
+
+footer {
+	padding: 10px;
+}
+
+body {
+	font-family: Lato, Segoe UI, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	background-color: #F0EAE2; /*#deedf7;*/
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+.bordered-image {
+	border: solid 1px #444;
+	border-radius: 2px;
+}
+
+#form-fieldset {
+	border-radius: 1.5em;
+	border: 2px solid #2c87ce;
+    width: 35%;
+    margin: 0 auto;
+	margin-top: 20px;
+    margin-bottom: 20px;
+	text-align: center;
+}
+
+#form-fieldset legend {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+#submit-cell {
+	padding-top: 1em;
+}
+
+#main {
+	border: solid 1px darkgoldenrod;
+	border-radius: 5px;
+	color: #202020;
+	margin: 20px 0;
+	padding: 5px;
+}
+
+#results {
+	padding: 10px;
+    width: 95%;
+    margin: 0 auto;
+    border: 1px solid darkgoldenrod;
+    border-radius: 5px;
+}
+
+.simple-form {
+	padding: 15px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.simple-form label {
+	font-weight: bold;
+}
+
+.simple-form table {
+	margin: 0 auto;
+}
+
+.simple-form input[type=text],
+.simple-form select,
+.simple-form input[type=password],
+.simple-form textarea {
+	width: 150px;
+}
+
+.btnStyle {
+	transition: background-color .5s ease;
+	background-color: white;
+	color: #008ed6;
+    border: 1px solid #2c87ce;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.btnStyle:hover {
+	transition: background-color .5s ease;
+	background-color: #2c87ce;
+    color: white;
+	cursor: pointer;
+}
+
+.container {
+	width: 989px;
+	margin: 0 auto;
+	background-color: white;
+	padding: 5px;
+}
+
+header nav {
+	float: right;
+    margin-right: 10px;
+    margin-top: 38px;
+    font-size: 20px;
+}
+
+header nav li {
+	transition: background-color .5s ease;
+    background-color: #2c87ce;
+    display: inline;
+    margin: 10px 0 10px 0;
+    border-radius: 5px 5px 0 0;
+    padding: 0 5px 0 5px;
+}
+
+header nav li:hover {
+	transition: background-color .5s ease;
+	background-color: white;
+}
+
+header nav li a {
+	color: white;
+	text-decoration: none;
+}
+
+header nav li a:hover {
+	color: #2c87ce;
+	text-decoration: none;
+}
+
+header nav ul {
+	margin-top: 37px;
+    width: 240px;
+}
+
+.result {
+	margin: 5px;
+	border: 1px solid #888;
+}
+
+.result .title {
+	font-weight: bold;
+}
+
+#title-div {
+	margin-left: 25px;
+}
+
+#subtitle-div {
+	margin: 10px;
+}
+
+#search-paragraph-div {
+	margin: 15px;
+    text-align: center;
+	font-weight: bold;
+}
+
+#resultList {
+	margin-top: 15px;
+}
+
+.hidden {
+	display: none;
+}
+
+.errorMsg {
+	color: red;
+	font-weight: bold;
+}
+
+#searchPhrase {
+	text-align: -webkit-center;
+}
+
+
+
+
+
+
